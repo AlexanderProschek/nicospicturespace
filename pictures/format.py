@@ -4,6 +4,8 @@ import random
 
 l = glob.glob('*.jpg')
 l = l + glob.glob('*.jpeg')
+l = l + glob.glob('*.JPEG')
+l = l + glob.glob('*.JPG')
 
 for f in l:
     os.rename(f, f"{random.randint(100,2000)}.jpeg")
